@@ -1,33 +1,35 @@
-@use '../presets' as *;
-@use '../mixins' as *;
+@use "../presets" as *;
+@use "../mixins" as *;
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-width: 2px;
-  border-style: solid;
+
   padding: 0.5em 1em;
+
   letter-spacing: 0.1em;
 
+  border-width: 2px;
+  border-style: solid;
+
   &--light {
-    background-color: rgba($color-white, 0.1);
     border-color: $color-white;
+    background-color: rgba($color-white, 0.1);
 
     @include lg-min {
-      min-height: 60px;
       min-width: 250px;
+      min-height: 60px;
+
       font-size: 1.125rem;
     }
-
     @include lg-md {
-      min-height: 50px;
       min-width: 200px;
+      min-height: 50px;
     }
-
     @include md {
-      min-height: 40px;
       min-width: 170px;
+      min-height: 40px;
     }
   }
 
