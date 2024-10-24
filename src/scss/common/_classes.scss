@@ -41,6 +41,17 @@
 
   &--primary {
     font-size: 1.125rem;
+    min-height: 60px;
+    background-color: rgba($color-primary, 0.8);
+    border-color: $color-primary;
+
+    @include sm-min {
+      min-width: 350px;
+    }
+
+    @include sm {
+      min-width: 100%;
+    }
   }
 }
 
