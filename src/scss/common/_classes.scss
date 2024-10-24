@@ -8,12 +8,11 @@
 
   padding: 0.5em 1em;
 
+  transition: background-color 0.3s;
   letter-spacing: 0.1em;
 
   border-width: 2px;
   border-style: solid;
-
-  transition: background-color 0.3s;
 
   &:hover,
   &:focus {
