@@ -458,6 +458,8 @@ a {
   margin: 0;
 
   letter-spacing: 0.1em;
+
+  font-family: "Roboto", sans-serif;
 }
 .skill-item__link {
   display: -webkit-box;
@@ -780,20 +782,75 @@ a {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  min-height: 250px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: #2d3651;
 }
-.footer__social-item {
+.footer__socials {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-bottom: 40px;
+
   font-size: 2.25rem;
+
+  gap: 20px;
+}
+.footer__socials::after {
+  position: absolute;
+  bottom: -20px;
+
+  display: block;
+
+  width: 75px;
+  height: 2px;
+
+  content: "";
+
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.footer__social-item {
+  -webkit-transition: color 0.3s;
+          transition: color 0.3s;
+}
+.footer__social-item:hover {
+  color: #d66926;
+}
+.footer__copyright {
+  text-align: center;
 }
 .footer__copyright-first {
+  display: block;
+
+  margin-bottom: 3px;
+
+  -webkit-transform: translateX(0.1em);
+      -ms-transform: translateX(0.1em);
+          transform: translateX(0.1em);
   letter-spacing: 0.3em;
 
   font-weight: 100;
 }
 .footer__copyright-last {
+  display: block;
+
+  letter-spacing: 0.05em;
+
   color: #ffffff;
 }
 @media (min-width: 576px) {

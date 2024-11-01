@@ -14,12 +14,14 @@
       @include unlist(0 (-$gap-sm) 0 0);
     }
     @include md {
-      display: none;
-
       position: absolute;
       top: 100%;
       right: $gap;
+
+      display: none;
+
       background-color: rgba($color-gray-dark, 0.9);
+
       @include unlist;
       @include box-shadow;
     }
@@ -42,7 +44,6 @@
     @include md-min {
       padding: $gap $gap-sm;
     }
-
     @include md {
       padding: $gap-sm $gap;
     }

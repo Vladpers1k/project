@@ -2,8 +2,9 @@
 @use "../../mixins" as *;
 
 .post-item {
-  background-color: $color-gray-light-2;
   transition: background-color 0.3s;
+
+  background-color: $color-gray-light-2;
 
   &:hover {
     background-color: darken($color-gray-light-2, 5%);
@@ -18,27 +19,34 @@
   }
 
   &__image {
-    width: 100%;
-    transition: transform 0.3s;
     display: block;
+
+    width: 100%;
+
+    transition: transform 0.3s;
+
     object-fit: cover;
   }
 
   &__picture {
-    overflow: hidden;
-    height: 300px;
     display: flex;
+    overflow: hidden;
+
+    height: 300px;
   }
 
   &__link {
-    color: inherit;
     transition: color 0.3s;
+
+    color: inherit;
   }
 
   &__content {
-    line-height: 1.25;
-    text-align: center;
     padding: $gap-lg $gap;
+
+    text-align: center;
+
+    line-height: 1.25;
   }
 }
 
