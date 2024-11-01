@@ -1,2 +1,26 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.footer {
+  background-color: $color-primary;
+  padding-top: $gap-x3;
+  padding-bottom: $gap-x3;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__social-item {
+    font-size: 2.25rem;
+  }
+
+  &__copyright {
+    &-first {
+      letter-spacing: 0.3em;
+      font-weight: 100;
+    }
+    &-last {
+      color: $color-white;
+    }
+  }
+}
