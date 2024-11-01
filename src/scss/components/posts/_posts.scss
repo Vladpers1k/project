@@ -1,0 +1,10 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.posts {
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+}
